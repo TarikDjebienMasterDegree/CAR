@@ -1,0 +1,46 @@
+10
+
+dir
+987
+https://forge.fil.univ-lille1.fr/11miageCRM/svn/trunk/CRM365/src/main/webapp/CharteGraphiqueCRM365
+https://forge.fil.univ-lille1.fr/11miageCRM/svn
+
+
+
+2012-06-09T00:03:16.221525Z
+965
+djebien
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2f0d81c6-a9bb-486d-b1c9-502bd64e4aaa
+
+css
+dir
+
+dataTables
+dir
+
+images
+dir
+
+jqplot
+dir
+
+jqueryui
+dir
+
+polices
+dir
+

@@ -1,0 +1,86 @@
+/*
+ * CSS3 de CRM365
+ * @author : Djebien Tarik
+ * @version : css 3.0
+ * @navigator : internet explorer
+ */
+@CHARSET "UTF-8";
+
+/******** HEADER */
+
+#titre_principal
+{
+	display: inline;
+	zoom: 1;
+}
+
+#crmLogo, header h1
+{
+	display: inline;
+	zoom: 1;
+	
+}
+
+/******** MENU */
+nav#menu  {
+	display: inline;
+	zoom: 1;
+}
+
+nav#navigator
+{
+	display: inline;
+	zoom: 1;
+}
+
+nav#navigator li
+{
+	display: inline;
+	zoom: 1;
+}
+
+/******** ELEMENTS DE CONTENU */
+
+/* LOGIN */
+
+/* SECTION */
+section#sectionMainContent {
+	display: inline;
+	zoom: 1;
+}
+
+/* CORPS */
+
+article
+{
+	display: inline;
+	zoom: 1;
+}
+
+aside
+{
+	display: inline;
+	zoom: 1;
+}
+
+/* FORMULAIRE */
+
+/******** FOOTER */
+footer p#copyright
+{
+	display: inline;
+	zoom: 1;
+}
+
+footer p#appVersion
+{
+	display: inline;
+	zoom: 1;
+}
+
+footer p#languages
+{
+	display: inline;
+	zoom: 1;
+}
+/******** SURCHARGE JQUERY UI */

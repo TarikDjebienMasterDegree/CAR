@@ -1,0 +1,475 @@
+/*
+ * CSS3 de CRM365
+ * @author : Djebien Tarik
+ * @version : css 3.0
+ * @navigator : firefox, safari, chrome
+ */
+@CHARSET "UTF-8";
+
+/******** Definition des polices personnalisees */
+@font-face
+{
+	font-family: 'BallparkWeiner';
+	src: url("../polices/ballpark.eot");
+	src: url("../polices/ballpark.eot?#iefix") format('embedded-opentype'),
+		 url("../polices/ballpark.woff") format('woff'),
+		 url("../polices/ballpark.ttf") format('truetype'),
+		 url("../polices/ballpark.svg#BallparkWeiner") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Dayrom';
+	src: url("../polices/dayrom.eot");
+	src: url("../polices/dayrom.eot?#iefix") format('embedded-opentype'),
+		 url("../polices/dayrom.woff") format('woff'),
+		 url("../polices/dayrom.ttf") format('truetype'),
+		 url("../polices/dayrom.svg#Dayrom") format('svg');
+	font-weight: normal;
+	font-style: normal;	
+}
+
+@font-face {
+    font-family: 'WindsongRegular';
+    src: url('../polices/windsong-webfont.eot');
+    src: url('../polices/windsong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../polices/windsong-webfont.woff') format('woff'),
+         url('../polices/windsong-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/******** ELEMENT PRINCIPAUX DE LA PAGE */
+body
+{
+	background: url("../images/designs/bg.png");
+	font-family: "lucida grande",'Trebuchet MS', Arial, sans-serif;
+	color: #181818;
+}
+
+#main_wrapper
+{
+	width: 100%;
+	margin: auto;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+section h1, header h1, footer h1, nav span, nav a 
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+}
+
+
+/******** HEADER */
+
+header
+{
+	/* marche que sur Firefox dommage 
+	background:
+	-moz-linear-gradient(center top , rgba(0, 0, 0, 0.2) 0pt, transparent 5%, transparent 97%, rgba(0, 0, 0, 0.45) 100%) repeat scroll 0 0%, 
+	-moz-linear-gradient(left center , rgba(0, 0, 0, 0.2) 0pt, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0 0%, 
+	-moz-linear-gradient(center bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	*/
+	
+	background-image: linear-gradient(left , rgb(112,147,219) 17%, rgb(37,133,217) 46%, rgb(12,12,230) 88%);
+	background-image: -o-linear-gradient(left , rgb(112,147,219) 17%, rgb(37,133,217) 46%, rgb(12,12,230) 88%);
+	background-image: -moz-linear-gradient(left , rgb(112,147,219) 17%, rgb(37,133,217) 46%, rgb(12,12,230) 88%);
+	background-image: -webkit-linear-gradient(left , rgb(112,147,219) 17%, rgb(37,133,217) 46%, rgb(12,12,230) 88%);
+	background-image: -ms-linear-gradient(left , rgb(112,147,219) 17%, rgb(37,133,217) 46%, rgb(12,12,230) 88%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right bottom,
+		color-stop(0.17, rgb(112,147,219)),
+		color-stop(0.46, rgb(37,133,217)),
+		color-stop(0.88, rgb(12,12,230))
+	);
+	
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.7);
+	margin-bottom: 3%;
+}
+
+#titre_principal
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	text-align: left;
+}
+
+#titre_principal *
+{
+	vertical-align: middle;
+	padding: 2px;
+	margin: 2px;
+}
+
+#logoApp
+{
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+#userInfos
+{
+	display: inline-block;
+}
+
+#crmLogo
+{
+	margin-top: 7px;
+	margin-left: 7px;
+}
+
+#logout
+{
+	color: red;
+}
+
+#search
+{
+	display: inline-block;
+	text-align: right;
+	vertical-align: bottom;
+	margin-left: 3px;
+	margin-right: 1px;
+	margin-bottom: 7px;
+}
+
+#search *
+{
+	display: inline-block;
+	text-align: right;
+	margin: 1px;
+}
+
+header h1
+{
+	margin-top: 5px;
+	margin-left: 4px;
+	margin-bottom: 2px;
+	font-weight: normal;
+	color: white;
+	text-shadow: 8px 3px 5px black;
+}
+
+header h2
+{
+	margin-left: 10px;
+	font-family: Dayron, serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: white;
+	text-shadow: 8px 3px 5px black;
+}
+
+/******** MENU */
+#menu
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+	border: 1px solid black;
+	font-size: 1em;
+}
+
+nav#navigator
+{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+}
+
+nav#navigator ul 
+{
+	list-style-type: none;
+}
+
+nav#navigator li
+{
+	display: inline-block;
+	border: 0px double rgba(0,0,0,0.5);
+	border-radius: 10px;
+	box-shadow : 6px 6px 2px rgba(0,0,0,0.8);
+	text-shadow: 2px 2px 2px rgba(255,255,255,0.6);
+}
+
+nav#navigator span,	nav#navigator span a
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	text-shadow: 8px 3px 5px black;
+	text-decoration: none;
+}
+
+nav#navigator span:hover
+{
+	border: 0.2px solid rgba(255,255,255,0.5);
+	border-radius: 10px;
+	color: white;
+	box-shadow : 6px 6px 2px rgba(255,255,255,0.8);
+	text-shadow: -20px 30px 3px rgba(255,255,255,0.2);
+	background-color: rgba(0,0,0,0.3);
+}
+
+/******** ELEMENTS DE CONTENU */
+
+/* SECTION */
+section#sectionMainContent 
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 84%;
+	padding-bottom: 7px;
+	border: 0.2px solid rgba(255,255,255,0.5);
+	border-radius: 10px;
+	box-shadow : 6px 6px 2px rgba(0,0,0,0.5);
+}
+
+section#createEventType, section#createEventParameter
+{
+	margin: 3px;
+	overflow: auto;
+}
+
+/* CORPS */
+
+section#createEventParameter
+{
+	max-height: 400px;
+	overflow: auto;	
+}
+
+article
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+	width: 70%;
+	margin-right: 5px;
+	float: left;
+}
+
+article p
+{
+	font-size: 0.8em;
+}
+
+div#articleTab section
+{
+	overflow: auto;
+}
+
+aside
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+	position: relative;
+	width: 25%;
+	height: 30em;
+	background-color: #706b64;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	font-size: 0.9em;
+}
+
+#reporting
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 11px;
+	text-align: left;
+	overflow: auto;
+}
+
+/* PAGE DE LOGIN */
+
+section#sectionLogin 
+{
+	width : 575px;
+	height : 320px;
+	margin: auto;
+	margin-bottom: 105px;
+	padding: 12px;
+	border-radius: 20px / 10px;
+	box-shadow : 6px 6px 6px grey;
+	background: url("../images/logos/logo.png") no-repeat center, 
+				url("../images/designs/login_panel.png") no-repeat;
+}
+
+.loginButton
+{
+	width: 60px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+form input:focus, form select:focus 
+{
+	background-color: #FFCC66;
+}
+
+section#sectionLogin form 
+{
+	position: relative;
+	width: 94%;
+	left: 3%;
+	top: 5%;
+}
+
+section#sectionLogin div.align
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 11px;
+	text-align: left;
+	margin: 7px;
+	display: inline;
+}
+
+section#sectionLogin div.alignButton
+{
+	margin: 3px;
+	display: inline;
+}
+
+section#sectionLogin div.align input
+{
+	border-color: blue;
+	width: 140px;
+}
+
+section#sectionLogin #loginInvalidMessage
+{
+	margin: 23px;
+	position: relative;
+	bottom: 27%;
+	left: 18%
+}
+
+/******** FOOTER */
+footer
+{
+	/* marche que sur Firefox dommage 
+	background:
+	-moz-linear-gradient(center top , rgba(0, 0, 0, 0.2) 0pt, transparent 5%, transparent 97%, rgba(0, 0, 0, 0.45) 100%) repeat scroll 0 0%, 
+	-moz-linear-gradient(left center , rgba(0, 0, 0, 0.2) 0pt, transparent 0.2%, transparent 99.8%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0 0%, 
+	-moz-linear-gradient(center bottom , #666666 0pt, #5E5E5E 50%, #707070 51%, #808080 100%) repeat scroll 0 0 transparent;
+	*/
+	
+	background-image: linear-gradient(left top, rgb(153,182,240) 22%, rgb(37,133,217) 50%, rgb(20,20,117) 81%);
+	background-image: -o-linear-gradient(left top, rgb(153,182,240) 22%, rgb(37,133,217) 50%, rgb(20,20,117) 81%);
+	background-image: -moz-linear-gradient(left top, rgb(153,182,240) 22%, rgb(37,133,217) 50%, rgb(20,20,117) 81%);
+	background-image: -webkit-linear-gradient(left top, rgb(153,182,240) 22%, rgb(37,133,217) 50%, rgb(20,20,117) 81%);
+	background-image: -ms-linear-gradient(left top, rgb(153,182,240) 22%, rgb(37,133,217) 50%, rgb(20,20,117) 81%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		color-stop(0.22, rgb(153,182,240)),
+		color-stop(0.5, rgb(37,133,217)),
+		color-stop(0.81, rgb(20,20,117))
+	);
+	
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.7);
+	margin-top: 7px;
+	margin-bottom: 1px;
+	padding-top: 1px;
+	bottom: 1%;
+}
+
+footer p
+{
+	font-weight: normal;
+	color: white;
+	text-shadow: 8px 3px 5px black;
+	font-size: 1.1em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+footer p#copyright
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	text-align: left;
+	padding: 3px;
+}
+
+footer p#appVersion
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	text-align: center;
+	padding: 3px;
+}
+
+footer p#languages
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	text-align: right;
+	padding: 3px;
+}
+
+/******** SURCHARGE JQUERY UI */
+
+/* bouton Jquery */
+input.ui-button 
+{
+	font-size: 11px;
+	text-align: center;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-color: #0AACFC;
+	box-shadow : 2px 2px 2px black;
+}
+
+/* Menu Jquery */
+.ui-accordion .ui-helper-reset
+{
+	padding: 2px;
+	font-size: 13px;
+	border: 0.2px solid rgba(255,255,255,0.5);
+	box-shadow : 6px 6px 2px rgba(0,0,0,0.5);
+	overflow: auto;
+}
+
+/* Tab Jquery */
+.ui-widget
+{
+	padding: 1px;
+	font-size: 13px;
+	border: 0.2px solid rgba(255,255,255,0.5);
+	box-shadow : 6px 6px 2px rgba(0,0,0,0.5);
+}
+
+/* Message d'erreur */
+.ui-state-error 
+{
+    color: red;
+    font-size: 13px;
+    padding: 2px 0 2px 2px;
+    text-align: center;
+    text-shadow: 3px 4px 6px grey;
+    border-radius: 10px;
+    width: 55%;
+    margin: 2px;
+    box-shadow : 2px 2px 2px red;
+}
